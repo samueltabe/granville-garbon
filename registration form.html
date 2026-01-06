@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration | Granville Energy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #fa9600;
+            --primary-hover: #d68000;
+            --dark: #1e293b;
+            --text: #475569;
+            --light-bg: #f1f5f9;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --success-green: #22c55e;
+            --font-main: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-main);
+            background-color: var(--light-bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding-bottom: 80px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* --- Header / Navigation --- */
+        .nav-bar {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-bar a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .nav-bar a:hover { color: var(--primary-hover); }
+
+        /* --- Form Card --- */
+        .form-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid var(--primary);
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #64748b;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        /* --- Sections --- */
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title i { color: var(--primary); opacity: 0.8; }
+
+        /* --- Grid & Inputs --- */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .full-width { grid-column: 1 / -1; }
+
+        .form-group { margin-bottom: 5px; }
+
+        label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+            color: var(--dark);
+        }
+        
+        .required { color: var(--primary); margin-left: 2px; }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            background-color: #fff;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(250, 150, 0, 0.1);
+        }
+        
+        textarea { resize: vertical; }
+
+        /* --- Checkboxes & Radios --- */
+        .option-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .radio-label, .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: var(--text);
+            padding: 8px;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+        
+        .radio-label:hover, .checkbox-label:hover {
+            background-color: #f8fafc;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            accent-color: var(--primary);
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+        }
+
+        /* --- Button --- */
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background-color: var(--primary);
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(250, 150, 0, 0.2);
+        }
+        
+        .btn-submit:hover { 
+            background-color: var(--primary-hover); 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(250, 150, 0, 0.3);
+        }
+
+        /* --- Success Message --- */
+        #success-message {
+            display: none; /* Hidden by default */
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: var(--success-green);
+            margin-bottom: 20px;
+        }
+        
+        .success-title {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .form-grid { grid-template-columns: 1fr; }
+            .form-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i> Back to Event Details
+            </a>
+        </div>
+
+        <div class="form-card" id="registration-form">
+            <h1>Register for Workshop</h1>
+            <p class="subtitle">Join us for the National Programme for Energy Self-Supply Launch. <br><strong>Date:</strong> 15 January 2026 • <strong>Venue:</strong> Radisson Blu, Libreville</p>
+
+            <form id="workshopForm" onsubmit="handleFormSubmit(event)">
+                
+                <div class="form-section">
+                    <div class="section-title"><i class="fa-solid fa-user"></i> Attendee Details</div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>First Name <span class="required">*</span></label>
+                            <input type="text" name="firstname" required placeholder="e.g. Jean">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name <span class="required">*</span></label>
+                            <input type="text" name="lastname" required placeholder="e.g. Dupont">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Email Address <span class="required">*</span></label>
+                            <input type="email" name="email" required placeholder="name@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number (WhatsApp preferred)</label>
+                            <input type="tel" name="mobile" placeholder="+241 ...">
+                        </div>
+                        <div class="form-group">
+                            <label>Job Title / Position <span class="required">*</span></label>
+                            <input type="text" name="jobtitle" required placeholder="e.g. Technical Director">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title"><i class="fa-solid fa-building"></i> Organisation Details</div>
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                            <label>Organisation / Company Name <span class="required">*</span></label>
+                            <input type="text" name="org_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Organisation Type <span class="required">*</span></label>
+                            <select name="org_type" required>
+                                <option value="" disabled selected>Select...</option>
+                                <option value="gov">Government / Ministry / Agency</option>
+                                <option value="public">Public Institution / Parastatal</option>
+                                <option value="municipality">Municipality / Local Authority</option>
+                                <option value="hospital">Hospital / Health Facility</option>
+                                <option value="education">University / Education</option>
+                                <option value="private">Private Company</option>
+                                <option value="ngo">NGO / Development Partner</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>City / Location</label>
+                            <input type="text" name="city" placeholder="e.g. Libreville">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title"><i class="fa-solid fa-ticket"></i> Attendance Info</div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label>Are you attending as:</label>
+                        <div class="option-group" style="flex-direction: row; gap: 20px; flex-wrap: wrap;">
+                            <label class="radio-label"><input type="radio" name="role" value="participant" checked> Participant</label>
+                            <label class="radio-label"><input type="radio" name="role" value="speaker"> Speaker / Presenter</label>
+                            <label class="radio-label"><input type="radio" name="role" value="partner"> Partner / Sponsor</label>
+                            <label class="radio-label"><input type="radio" name="role" value="media"> Media</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label>How many people from your organisation are attending?</label>
+                        <div class="option-group" style="flex-direction: row; gap: 20px;">
+                            <label class="radio-label"><input type="radio" name="count" value="1" checked> 1</label>
+                            <label class="radio-label"><input type="radio" name="count" value="2"> 2</label>
+                            <label class="radio-label"><input type="radio" name="count" value="3"> 3</label>
+                            <label class="radio-label"><input type="radio" name="count" value="4+"> 4+</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Names of additional attendees (Optional)</label>
+                        <textarea rows="2" placeholder="If applicable, please list their names here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title"><i class="fa-solid fa-bullseye"></i> Why you’re attending</div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label>What are you hoping to get from the workshop? <span class="required">*</span> <span style="font-weight:400; font-size: 0.85em; color: #94a3b8;">(Select up to 2)</span></label>
+                        <div class="option-group">
+                            <label class="checkbox-label"><input type="checkbox" name="goals"> Understand the national programme and next steps</label>
+                            <label class="checkbox-label"><input type="checkbox" name="goals"> Learn about solar self-production for rooftops</label>
+                            <label class="checkbox-label"><input type="checkbox" name="goals"> Understand funding / partnership approaches</label>
+                            <label class="checkbox-label"><input type="checkbox" name="goals"> Meet stakeholders and ask questions</label>
+                            <label class="checkbox-label"><input type="checkbox" name="goals"> Explore whether our organisation could participate</label>
+                            <label class="checkbox-label"><input type="checkbox" name="goals"> Other</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Do you have any questions you’d like addressed?</label>
+                        <textarea rows="3" placeholder="Write your question here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title"><i class="fa-solid fa-shield-halved"></i> Permissions & Logistics</div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Dietary Requirements</label>
+                            <select name="diet">
+                                <option value="none" selected>None</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="halal">Halal</option>
+                                <option value="other">Other (Specify in Allergies)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Allergies / Special Notes</label>
+                            <input type="text" name="allergies" placeholder="e.g. Peanuts, Gluten...">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 20px;">
+                        <div class="option-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="photo_consent">
+                                <span style="font-size: 0.9em; color: #64748b;">
+                                    <strong>Photo/Video Notice:</strong> I understand photos/videos may be taken during the event for communication purposes.
+                                </span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy_consent" required>
+                                <span style="font-size: 0.9em;">
+                                    <strong>Privacy Consent <span class="required">*</span>:</strong> I consent to be contacted with event updates (confirmation, reminders, logistics).
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirm Registration</button>
+            </form>
+        </div>
+
+        <div class="form-card" id="success-message">
+            <div class="success-icon"><i class="fa-regular fa-circle-check"></i></div>
+            <div class="success-title">Registration Confirmed!</div>
+            <p style="margin-bottom: 30px; color: #64748b;">Thanks — your registration has been received. You’ll get a confirmation email with event details shortly.</p>
+            <a href="index.html" style="color: var(--primary); font-weight: 600; text-decoration: none;">Return to Home Page</a>
+        </div>
+
+    </div>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Stop page reload
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Hide form, show success
+            document.getElementById('registration-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
