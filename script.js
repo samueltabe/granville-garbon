@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Script loaded and DOM ready');
     
     // FAQ Accordion Logic
     const accordions = document.querySelectorAll('.accordion-header');
