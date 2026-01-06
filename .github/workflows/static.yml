@@ -31,17 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-<<<<<<< HEAD
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload only the root static files (HTML, CSS, JS, images)
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-=======
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -52,4 +41,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
->>>>>>> 2b371342fc27f8d5063628521b9f6f29f5a0b806
