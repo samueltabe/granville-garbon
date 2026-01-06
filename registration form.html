@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop Registration | Granville Energy</title>
+        <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -235,7 +236,7 @@
             <p class="subtitle">
                 Join us for the National Programme for Energy Self-Supply Launch. <br><strong>Date:</strong> 15 January 2026 • <strong>Venue:</strong> Radisson Blu, Libreville
             </p>
-            <form id="workshopForm" onsubmit="handleFormSubmit(event)">
+            <form id="workshopForm">
                 
                 <div class="form-section">
                     <div class="section-title"><i class="fa-solid fa-user"></i> Attendee Details</div>
@@ -537,29 +538,43 @@
 
     </div>
 
-<script>
-    function handleFormSubmit(event) {
-        // 1. We DON'T use preventDefault() immediately. 
-        // HubSpot's tracking code needs the 'submit' event to fire naturally.
+    <script>
+document.getElementById('workshopForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop the URL from changing and the page from reloading
 
-        // 2. Scroll to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = {};
+    
+    // Convert form data to a readable object for HubSpot
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
 
-        // 3. Use a tiny delay (500ms) to let HubSpot's script "grab" the data 
-        // before we remove the form from the screen.
-        setTimeout(function() {
-            // Hide the form container
-            // Note: Ensure this ID matches your wrapper div
-            document.getElementById('workshopForm').style.display = 'none';
-            
-            // Show the success message
-            document.getElementById('success-message').style.display = 'block';
-        }, 500);
+    // 1. Scroll to top immediately for better user experience
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
-        // Optional: If you want to stop the page from a full refresh 
-        // but still let HubSpot see it, return true at the end.
-        return true; 
-    }
+    // 2. We trigger a manual "submit" event that HubSpot's tracking code can see, 
+    // or we can simply let the tracking code do its work by waiting a brief moment 
+    // before hiding the UI.
+    
+    setTimeout(() => {
+        // Hide the form and show success message
+        // Ensure these IDs match your HTML elements
+        const formContainer = document.querySelector('.form-container') || form;
+        formContainer.style.display = 'none';
+        
+        const successMsg = document.getElementById('success-message');
+        if (successMsg) {
+            successMsg.style.display = 'block';
+        } else {
+            alert("Registration Successful!");
+        }
+    }, 600); 
+
+    // Note: HubSpot's tracking code "scrapes" the button click. 
+    // By keeping the form on screen for 600ms, we ensure the script finishes its task.
+});
 </script>
 
 </body>
