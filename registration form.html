@@ -537,18 +537,30 @@
 
     </div>
 
-    <script>
-        function handleFormSubmit(event) {
-            event.preventDefault(); // Stop page reload
-            
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+<script>
+    function handleFormSubmit(event) {
+        // 1. We DON'T use preventDefault() immediately. 
+        // HubSpot's tracking code needs the 'submit' event to fire naturally.
 
-            // Hide form, show success
-            document.getElementById('registration-form').style.display = 'none';
+        // 2. Scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // 3. Use a tiny delay (500ms) to let HubSpot's script "grab" the data 
+        // before we remove the form from the screen.
+        setTimeout(function() {
+            // Hide the form container
+            // Note: Ensure this ID matches your wrapper div
+            document.getElementById('workshopForm').style.display = 'none';
+            
+            // Show the success message
             document.getElementById('success-message').style.display = 'block';
-        }
-    </script>
+        }, 500);
+
+        // Optional: If you want to stop the page from a full refresh 
+        // but still let HubSpot see it, return true at the end.
+        return true; 
+    }
+</script>
 
 </body>
 </html>
