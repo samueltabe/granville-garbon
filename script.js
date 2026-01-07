@@ -60,23 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
             'hero.title': 'Workshop on Energy Self-Production in Gabon',
             'hero.subheading': 'Launch of the National Programme for Energy Self-Supply (Auto-alimentation energetique)',
             'hero.chip.date': '<i class="fa-regular fa-calendar"></i> Wed, 15 Jan 2026',
-            'hero.chip.time': '<i class="fa-regular fa-clock"></i> 09:30 – 18:00',
-            'hero.chip.location': '<i class="fa-solid fa-location-dot"></i> Complexe Hôtelier de la Sablière',
+            'hero.chip.time': '<i class="fa-regular fa-clock"></i> 14:00 – 19:00',
+            'hero.chip.location': '<i class="fa-solid fa-location-dot"></i> Sablière Hotel Complex',
             'hero.cta.register': 'Register for Workshop',
             'hero.cta.download': 'Download Invitation',
-            'hero.hosted': 'Hosted by: <strong>Ministry of Universal Access to Water & Energy</strong> + <strong>Granville Energy</strong>',
+            'hero.hosted': 'Hosted by: <strong>Ministry of Universal Access to Water & Energy</strong> + <strong>Granville Industries Gabon</strong>',
 
-            'about.title': 'Setting a New Standard',
+            'about.title': 'Event Objective and Purpose',
             'about.lead': 'Protocol of Agreement signed 06 October 2025 with the Ministry to support a national solar self-production programme.',
-            'about.body': 'This workshop serves as a vital information and exchange session for organisations with rooftop space to learn about solar + storage options, eligibility, and participation steps.',
+            'about.body': '“Main objective: To present and frame the energy self-sufficiency program for private, public and semi-public entities, jointly supported by the Ministry of Universal Access to Water and Energy and Granville Industries Gabon.”',
 
-            'objectives.title': 'Core Objectives',
-            'objectives.obj1.title': 'Launch Programme',
-            'objectives.obj1.text': 'Officially launch and promote the national programme for energy self-supply in Gabon.',
-            'objectives.obj2.title': 'Educate & Explain',
-            'objectives.obj2.text': 'Detail solar/battery solutions, eligibility criteria, and the evaluation process.',
-            'objectives.obj3.title': 'Actionable Steps',
-            'objectives.obj3.text': 'Pre-screen participants for energy audits, MoUs, and future solar deployments.',
+            'objectives.title': 'Specific Objectives',
+            'objectives.obj1.title': 'Align Stakeholders',
+            'objectives.obj1.text': 'Align institutional, administrative, and technical stakeholders around a shared vision for energy self-sufficiency and coordinated implementation.',
+            'objectives.obj2.title': 'Present the Vision & Model',
+            'objectives.obj2.text': 'Present the programme vision, technical solutions, and deployment model for private, public, and semi-public entities.',
+            'objectives.obj3.title': 'Define Next Steps',
+            'objectives.obj3.text': 'Identify initial pilot structures and agree on the next operational and institutional steps following the workshop.',
 
             'who.title': 'Who Should Attend?',
             'who.p': 'If you manage a facility with rooftop space and recurring electricity costs, this event is for you.',
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'topics.special.li3': 'Understanding the "Auto-alimentation" framework',
 
             'venue.title': 'Venue',
-            'venue.hotel': 'Complexe Hôtelier de la Sablière',
+            'venue.hotel': 'Sablière Hotel Complex',
             'venue.city': 'Libreville, Gabon',
             'venue.arrival': '<strong><i class="fa-regular fa-clock" style="color:var(--primary); margin-right:5px;"></i> Arrival:</strong> Please arrive by 09:15 for check-in.',
             'venue.what.title': '<strong><i class="fa-solid fa-briefcase" style="color:var(--primary); margin-right:5px;"></i> What to bring:</strong>',
@@ -151,23 +151,23 @@ document.addEventListener('DOMContentLoaded', () => {
             'hero.title': "Atelier sur l'auto-production d'energie au Gabon",
             'hero.subheading': "Lancement du Programme National d'Auto-alimentation energetique",
             'hero.chip.date': '<i class="fa-regular fa-calendar"></i> Mer, 15 Jan 2026',
-            'hero.chip.time': '<i class="fa-regular fa-clock"></i> 09:30 – 18:00',
-            'hero.chip.location': '<i class="fa-solid fa-location-dot"></i> Complexe Hôtelier de la Sablière',
+            'hero.chip.time': '<i class="fa-regular fa-clock"></i> 14:00 – 19:00',
+            'hero.chip.location': '<i class="fa-solid fa-location-dot"></i> Sablière Hotel Complex',
             'hero.cta.register': "S'inscrire a l'atelier",
             'hero.cta.download': "Telecharger l'invitation",
-            'hero.hosted': 'Organise par : <strong>Ministry of Universal Access to Water & Energy</strong> + <strong>Granville Energy</strong>',
+            'hero.hosted': 'Organise par : <strong>Ministry of Universal Access to Water & Energy</strong> + <strong>Granville Industries Gabon</strong>',
 
-            'about.title': 'Poser une nouvelle reference',
+            'about.title': 'Objectif et but de l\'événement',
             'about.lead': "Protocole d'accord signe le 06 octobre 2025 avec le Ministere pour soutenir un programme national de production solaire.",
-            'about.body': "Cet atelier est une session d'information et d'echange pour les organisations disposant d'espaces de toiture afin d'apprendre les options solaire + stockage, l'eligibilite et les etapes de participation.",
+            'about.body': "Objectif principal : Présenter et cadrer le programme d’autosuffisance énergétique pour les entités privées, publiques et parapubliques, soutenu conjointement par le Ministère de l’Accès Universel à l’Eau et à l’Énergie et Granville Industries Gabon.",
 
-            'objectives.title': 'Objectifs principaux',
-            'objectives.obj1.title': 'Lancer le programme',
-            'objectives.obj1.text': "Lancer et promouvoir officiellement le programme national d'auto-alimentation energetique au Gabon.",
-            'objectives.obj2.title': 'Informer & Expliquer',
-            'objectives.obj2.text': "Detailler les solutions solaire/batterie, les criteres d'eligibilite et le processus d'evaluation.",
-            'objectives.obj3.title': 'Actions concretes',
-            'objectives.obj3.text': "Pre-selectionner les participants pour audits energetiques, protocoles d'accord et deploiements futurs.",
+            'objectives.title': 'Objectifs spécifiques',
+            'objectives.obj1.title': 'Aligner les parties prenantes',
+            'objectives.obj1.text': "Aligner les parties prenantes institutionnelles, administratives et techniques autour d’une vision commune de l’autosuffisance énergétique et d’une mise en œuvre coordonnée.",
+            'objectives.obj2.title': 'Présenter la vision et le modèle',
+            'objectives.obj2.text': "Présenter la vision du programme, les solutions techniques et le modèle de déploiement pour les entités privées, publiques et parapubliques.",
+            'objectives.obj3.title': 'Définir les prochaines étapes',
+            'objectives.obj3.text': "Identifier les structures pilotes initiales et convenir des prochaines étapes opérationnelles et institutionnelles à l'issue de l'atelier.",
 
             'who.title': 'Qui doit assister ?',
             'who.p': "Si vous gerez une installation avec un espace de toiture et des couts d'electricite recurrents, cet evenement est pour vous.",
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'topics.special.li3': "Comprendre le cadre d'Auto-alimentation",
 
             'venue.title': 'Lieu & Logistique',
-            'venue.hotel': 'Radisson Blu Hotel',
+            'venue.hotel': 'Sablière Hotel Complex',
             'venue.city': 'Libreville, Gabon',
             'venue.arrival': '<strong><i class="fa-regular fa-clock" style="color:var(--primary); margin-right:5px;"></i> Arrivee :</strong> Veuillez arriver avant 09:15 pour l enregistrement.',
             'venue.what.title': '<strong><i class="fa-solid fa-briefcase" style="color:var(--primary); margin-right:5px;"></i> A apporter :</strong>',
@@ -252,8 +252,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (val !== undefined) el.innerHTML = val;
         });
 
-        // Update active lang button
-        document.querySelectorAll('.lang-toggle span').forEach(s => {
+        // Update active lang button (desktop and mobile)
+        document.querySelectorAll('.lang-toggle span, .mobile-lang').forEach(s => {
             s.classList.toggle('active', s.dataset.lang === lang);
         });
 
@@ -265,8 +265,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('site_lang') || 'en';
     applyLanguage(savedLang);
 
-    // Wire language toggle clicks
-    document.querySelectorAll('.lang-toggle span').forEach(span => {
+    // Wire language toggle clicks (desktop and mobile)
+    document.querySelectorAll('.lang-toggle span, .mobile-lang').forEach(span => {
         span.addEventListener('click', () => {
             const lang = span.dataset.lang;
             if (!lang) return;

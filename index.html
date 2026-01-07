@@ -27,7 +27,7 @@
             <nav class="desktop-nav">
                 <a href="#about" data-i18n="nav.about">About</a>
                 <a href="#who-its-for" data-i18n="nav.who">Who It’s For</a>
-                <a href="#topics" data-i18n="nav.topics">Topics</a>
+                <!-- <a href="#topics" data-i18n="nav.topics">Topics</a> -->
                 <a href="#venue" data-i18n="nav.venue">Venue</a>
                 <!-- <a href="#programme" data-i18n="nav.programme">Programme</a> -->
                 <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -36,8 +36,8 @@
                 </div>
                 <a href="#register" class="btn btn-primary" data-i18n="nav.register">Register Now</a>
             </nav>
-
-            <div class="mobile-menu-btn">
+             
+            <div class="mobile-menu-btn"> 
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -47,10 +47,14 @@
         <div style="display:flex; flex-direction:column; gap:15px;">
             <a href="#about" class="mobile-link" data-i18n="nav.about">About</a>
             <a href="#who-its-for" class="mobile-link" data-i18n="nav.who">Who It’s For</a>
-            <a href="#topics" class="mobile-link" data-i18n="nav.topics">Topics</a>
+            <!-- <a href="#topics" class="mobile-link" data-i18n="nav.topics">Topics</a> -->
             <a href="#venue" class="mobile-link" data-i18n="nav.venue">Venue</a>
             <!-- <a href="#programme" class="mobile-link" data-i18n="nav.programme">Programme</a> -->
-            <a href="#faq" class="mobile-link" data-i18n="nav.faq">FAQ</a>
+            <a href="#faq" class="mobile-link" data-i18n="nav.faq">FAQ</a>            
+            
+            <div class="mobile-lang-toggle" style="text-align:center; padding-top:10px; border-top:1px solid #e2e8f0;">
+                <span class="mobile-lang active" data-lang="en">EN</span> | <span class="mobile-lang" data-lang="fr">FR</span>
+            </div>
             <a href="#register" class="btn btn-primary" style="text-align:center;" data-i18n="nav.register">Register Now</a>
         </div>
     </div>
@@ -69,8 +73,8 @@
             
             <div class="event-details-chips">
                 <div class="chip" data-i18n-html="hero.chip.date"><i class="fa-regular fa-calendar"></i> Wed, 15 Jan 2026</div>
-                <div class="chip" data-i18n-html="hero.chip.time"><i class="fa-regular fa-clock"></i> 09:30 – 18:00</div>
-                <div class="chip" data-i18n-html="hero.chip.location"><i class="fa-solid fa-location-dot"></i> Complexe Hôtelier de la Sablière</div>
+                <div class="chip" data-i18n-html="hero.chip.time"><i class="fa-regular fa-clock"></i> 14:00 – 19:00</div>
+                <div class="chip" data-i18n-html="hero.chip.location"><i class="fa-solid fa-location-dot"></i> Sablière Hotel Complex</div>
             </div>
 
             <!-- <div class="hero-cta">
@@ -78,40 +82,40 @@
                 <a href="#" class="btn btn-outline btn-large" data-i18n="hero.cta.download">Download Invitation</a>
             </div> -->
 
-            <p class="hosted-by" data-i18n-html="hero.hosted">Hosted by: <strong>Ministry of Universal Access to Water & Energy</strong> + <strong>Granville Energy</strong></p>
+            <p class="hosted-by" data-i18n-html="hero.hosted">Hosted by: <strong>Ministry of Universal Access to Water & Energy</strong> + <strong>Granville Industries Gabon</strong></p>
         </div>
     </section>
 
     <section id="about" class="section-light">
         <div class="container text-center">
-            <h2 class="section-title" data-i18n="about.title">Setting a New Standard</h2>
+            <h2 class="section-title" data-i18n="about.title">Event Objective and Purpose</h2>
             <p class="lead-text" data-i18n="about.lead">
                 Protocol of Agreement signed 06 October 2025 with the Ministry to support a national solar self-production programme.
             </p>
             <p class="body-text max-w-800" data-i18n="about.body">
-                This workshop serves as a vital information and exchange session for organisations with rooftop space to learn about solar + storage options, eligibility, and participation steps.
+                “Main objective: To present and frame the energy self-sufficiency program for private, public and semi-public entities, jointly supported by the Ministry of Universal Access to Water and Energy and Granville Industries Gabon.”
             </p>
         </div>
     </section>
 
     <section id="objectives">
         <div class="container">
-            <h2 class="section-title text-center" data-i18n="objectives.title">Core Objectives</h2>
+            <h2 class="section-title text-center" data-i18n="objectives.title">Specific Objectives</h2>
             <div class="grid-3">
                 <div class="card">
                     <div class="icon-box"><i class="fa-solid fa-rocket"></i></div>
-                    <h3 data-i18n="objectives.obj1.title">Launch Programme</h3>
-                    <p data-i18n="objectives.obj1.text">Officially launch and promote the national programme for energy self-supply in Gabon.</p>
+                    <h3 data-i18n="objectives.obj1.title">Align Stakeholders</h3>
+                    <p data-i18n="objectives.obj1.text">Align institutional, administrative, and technical stakeholders around a shared vision for energy self-sufficiency and coordinated implementation.</p>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="fa-solid fa-chalkboard-user"></i></div>
-                    <h3 data-i18n="objectives.obj2.title">Educate & Explain</h3>
-                    <p data-i18n="objectives.obj2.text">Detail solar/battery solutions, eligibility criteria, and the evaluation process.</p>
+                    <h3 data-i18n="objectives.obj2.title">Present the Vision & Model</h3>
+                    <p data-i18n="objectives.obj2.text">Present the programme vision, technical solutions, and deployment model for private, public, and semi-public entities.</p>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="fa-solid fa-file-signature"></i></div>
-                    <h3 data-i18n="objectives.obj3.title">Actionable Steps</h3>
-                    <p data-i18n="objectives.obj3.text">Pre-screen participants for energy audits, MoUs, and future solar deployments.</p>
+                    <h3 data-i18n="objectives.obj3.title">Define Next Steps</h3>
+                    <p data-i18n="objectives.obj3.text">Identify initial pilot structures and agree on the next operational and institutional steps following the workshop.</p>
                 </div>
             </div>
         </div>
@@ -172,7 +176,7 @@
             <h2 class="section-title text-center" data-i18n="venue.title">Venue</h2>
             <div class="venue-box">
                 <div class="venue-info">
-                    <h3 data-i18n="venue.hotel">Complexe Hôtelier de la Sablière</h3>
+                    <h3 data-i18n="venue.hotel">Sablière Hotel Complex</h3>
                     <p style="color:var(--text);" data-i18n="venue.city">Libreville, Gabon</p>
                     <hr>
                     <p data-i18n-html="venue.arrival"><strong><i class="fa-regular fa-clock" style="color:var(--primary); margin-right:5px;"></i> Arrival:</strong> Please arrive by 09:15 for check-in.</p>

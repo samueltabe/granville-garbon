@@ -46,7 +46,7 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -163,6 +163,23 @@
         }
 
         .lang-toggle .active {
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .mobile-lang-toggle {
+            font-size: 0.85rem;
+            color: var(--text);
+            cursor: pointer;
+            display: none;
+        }
+
+        .mobile-lang {
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .mobile-lang.active {
             font-weight: 700;
             color: var(--dark);
         }
@@ -290,7 +307,7 @@
             font-size: 0.9rem;
             color: #ffffff;
             opacity: 0.8;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
@@ -339,7 +356,7 @@
         }
 
         .max-w-800 {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
 
@@ -671,6 +688,8 @@
         @media (max-width: 768px) {
             .desktop-nav { display: none; }
             .mobile-menu-btn { display: block; }
+            .lang-toggle { display: none; }
+            .mobile-lang-toggle { display: block; }
             
             #hero { padding-top: 60px; }
             #hero h1 { font-size: 2rem; }
