@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             'footer.contact.title': 'Contact Support',
             'footer.contact.p': 'For registration and participation queries:',
-            'footer.contact.email': 'events@granville.com',
-            'footer.contact.phone': '+241 00 00 00 00',
+            'footer.contact.email': 'connect@granville-energy.com',
+            'footer.contact.phone': '+010-450-0211',
             'footer.orgs.title': 'Organisers',
             'footer.copy': '© 2026 Granville Energy. Registration data used for event administration.'
         },
@@ -225,8 +225,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             'footer.contact.title': 'Assistance',
             'footer.contact.p': "Pour les questions d'inscription et de participation :",
-            'footer.contact.email': 'events@granville.com',
-            'footer.contact.phone': '+241 00 00 00 00',
+            'footer.contact.email': 'connect@granville-energy.com',
+            'footer.contact.phone': '+010-450-0211',
             'footer.orgs.title': 'Organisateurs',
             'footer.copy': "© 2026 Granville Energy. Donnees d'inscription utilisees pour l'administration de l'evenement."
         }
