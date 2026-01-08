@@ -129,13 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             'register.title': 'Ready to participate?',
             'register.p': 'Seats are limited. Register now to confirm your attendance and receive the full agenda.',
-            'register.cta': 'Register / Sign Up',
+            'register.cta': 'Register',
             'register.micro': "You'll receive a confirmation email with event details immediately.",
 
             'footer.contact.title': 'Contact Support',
             'footer.contact.p': 'For registration and participation queries:',
-            'footer.contact.email': 'connect@granville-energy.com',
-            'footer.contact.phone': '+010-450-0211',
+            'footer.contact.email': 'events@granville-energy.com',
+            'footer.contact.phone': ' +24107371783',
             'footer.orgs.title': 'Organisers',
             'footer.copy': '© 2026 Granville Energy. Registration data used for event administration.'
         },
@@ -220,13 +220,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             'register.title': 'Pret a participer ?',
             'register.p': "Les places sont limitees. Inscrivez-vous maintenant pour confirmer votre participation et recevoir l'agenda complet.",
-            'register.cta': "S'inscrire / S'inscrire",
+            'register.cta': "S'inscrire",
             'register.micro': "Vous recevrez immediatement un e-mail de confirmation avec les details de l'evenement.",
 
             'footer.contact.title': 'Assistance',
             'footer.contact.p': "Pour les questions d'inscription et de participation :",
-            'footer.contact.email': 'connect@granville-energy.com',
-            'footer.contact.phone': '+010-450-0211',
+            'footer.contact.email': 'events@granville-energy.com',
+            'footer.contact.phone': '+24107371783',
             'footer.orgs.title': 'Organisateurs',
             'footer.copy': "© 2026 Granville Energy. Donnees d'inscription utilisees pour l'administration de l'evenement."
         }
