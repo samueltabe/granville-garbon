@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             'about.title': 'Event Objective and Purpose',
             'about.lead': 'Protocol of Agreement signed 06 October 2025 with the Ministry to support a national solar self-production programme.',
-            'about.body': '“Main objective: To present and frame the energy self-sufficiency program for private, public and semi-public entities, jointly supported by the Ministry of Universal Access to Water and Energy and Granville Industries Gabon.”',
+            'about.body': 'Main objective: To present and frame the energy self-sufficiency program for private, public and semi-public entities, jointly supported by the Ministry of Universal Access to Water and Energy and Granville Industries Gabon.',
 
             'objectives.title': 'Specific Objectives',
             'objectives.obj1.title': 'Align Stakeholders',
