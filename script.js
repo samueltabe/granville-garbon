@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'register.cta': "S'inscrire",
             'register.micro': "Vous recevrez immediatement un e-mail de confirmation avec les details de l'evenement.",
 
-            'footer.contact.title': 'Assistance',
+            'footer.contact.title': 'Contacter l\'assistance',
             'footer.contact.p': "Pour les questions d'inscription et de participation :",
             'footer.contact.email': 'events@granville-energy.com',
             'footer.contact.phone': '+24107371783',
