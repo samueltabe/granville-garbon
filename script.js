@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.contact.p': 'For registration and participation queries:',
             'footer.contact.email': 'events@granville-energy.com',
             'footer.contact.phone': ' +24107371783',
-            'footer.orgs.title': 'Organisers',
+            'footer.orgs.title': 'Industry Accreditations',
             'footer.copy': '© 2026 Granville Energy. Registration data used for event administration.'
         },
         fr: {
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.contact.p': "Pour les questions d'inscription et de participation :",
             'footer.contact.email': 'events@granville-energy.com',
             'footer.contact.phone': '+24107371783',
-            'footer.orgs.title': 'Organisateurs',
+            'footer.orgs.title': 'Accréditations professionnelles',
             'footer.copy': "© 2026 Granville Energy. Donnees d'inscription utilisees pour l'administration de l'evenement."
         }
     };
@@ -261,8 +261,9 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('site_lang', lang);
     }
 
-    // Initialize with saved language or default to English
-    const savedLang = localStorage.getItem('site_lang') || 'en';
+    // Initialize with saved language or default to French
+    localStorage.removeItem('site_lang');
+    const savedLang = localStorage.getItem('site_lang') || 'fr';
     applyLanguage(savedLang);
 
     // Wire language toggle clicks (desktop and mobile)
